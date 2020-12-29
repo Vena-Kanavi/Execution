@@ -22,22 +22,24 @@ public class HotelTester {
 
 		HotelsInCity hotel = new HotelsInCity(5);
 
-		HotelDTO dto = new HotelDTO("Ayodya", Location.JAINAGAR, foodItems);
+		HotelDTO dto = new HotelDTO("Ayodya", Location.JAINAGAR, foodItems,"Sushma");
 		hotel.addHotel(dto);
 		hotel.displayHotelInfo();
 
 		
-		HotelDTO dto2=new HotelDTO("Udupi", Location.MGROAD, foodItems);
+		HotelDTO dto2=new HotelDTO("Udupi", Location.MGROAD, foodItems,"Pramod");
 		hotel.addHotel(dto2);
 		hotel.displayHotelInfo();
 		
-		HotelDTO dto3=new HotelDTO("Brundavana", Location.JAINAGAR, foodItems);
+		HotelDTO dto3=new HotelDTO("Brundavana", Location.JAINAGAR, foodItems,"Vena");
 		hotel.addHotel(dto3);
 		hotel.displayHotelInfo();
 
 		hotel.displayByName("Ayodya", Location.JAINAGAR);
 		
 		hotel.displayByName("Brundavana", Location.JAINAGAR);
+		
+		hotel.displayOwnerName("Ayodya");
 		
 		
 		

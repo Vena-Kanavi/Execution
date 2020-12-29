@@ -74,18 +74,17 @@ public class HotelsInCity {
 		}
 	}
 
-	public void displayOwnerName(String ownerName) {
-		if (ownerName != null) {
+	public void displayOwnerName(String name) {
+		if (name != null) {
 			boolean start = false;
 			for (int index = 0; index < this.hotelDTO.length; index++) {
 				if (this.hotelDTO[index] != null) {
 					start = true;
-					System.out.println("displaying owner name");
 					HotelDTO refOfstart = this.hotelDTO[index];
-					refOfstart.setOwnerName("vishalaxi");
-					String localownerName = refOfstart.getOwnerName();
-					if (ownerName.equals(localownerName)) {
+					String localName = refOfstart.getName();
+					if (name.equals(localName)) {
 						System.out.println("owner name is" + refOfstart.getOwnerName());
+						System.out.println("hotel name is "+refOfstart.getName());
 						// break;
 					}
 				}

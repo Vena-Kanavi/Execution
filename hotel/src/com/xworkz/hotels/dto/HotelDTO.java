@@ -22,10 +22,11 @@ public class HotelDTO {
 	 * @param name
 	 * @param location
 	 */
-	public HotelDTO(String name, Location location, String[] foodItems) {
+	public HotelDTO(String name, Location location, String[] foodItems,String ownerName) {
 		this.name = name;
 		this.location = location;
 		this.foodItems = foodItems;
+		this.ownerName=ownerName;
 	}
 
 	public String[] getFoodItems() {
